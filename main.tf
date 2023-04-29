@@ -1,9 +1,10 @@
-resource "proxmox_lxc" "advanced_features" {
+resource "proxmox_lxc" "Angular" {
   target_node  = "jayesh"
   hostname     = "Angular"
   ostemplate   = "local:vztmpl/ubuntu-22.10-standard_22.10-1_amd64.tar.zst"
   password     = "password"
   unprivileged = true
+  start        = true
 
   rootfs {
     storage = "local-lvm"
@@ -24,12 +25,14 @@ resource "proxmox_lxc" "advanced_features" {
   EOT
 }
 
-resource "proxmox_lxc" "advanced_features" {
+resource "proxmox_lxc" "Wordpress" {
   target_node  = "jayesh"
   hostname     = "Wordpress"
   ostemplate   = "local:vztmpl/ubuntu-22.10-standard_22.10-1_amd64.tar.zst"
   password     = "password"
   unprivileged = true
+  start        = true
+
 
   rootfs {
     storage = "local-lvm"
@@ -50,12 +53,13 @@ resource "proxmox_lxc" "advanced_features" {
   EOT
 }
 
-resource "proxmox_lxc" "advanced_features" {
+resource "proxmox_lxc" "MySQL" {
   target_node  = "jayesh"
   hostname     = "MySQL"
   ostemplate   = "local:vztmpl/ubuntu-22.10-standard_22.10-1_amd64.tar.zst"
   password     = "password"
   unprivileged = true
+  start        = true
 
   rootfs {
     storage = "local-lvm"
@@ -76,12 +80,13 @@ resource "proxmox_lxc" "advanced_features" {
   EOT
 }
 
-resource "proxmox_lxc" "advanced_features" {
+resource "proxmox_lxc" "Keycloak" {
   target_node  = "jayesh"
   hostname     = "Keycloak"
   ostemplate   = "local:vztmpl/ubuntu-22.10-standard_22.10-1_amd64.tar.zst"
   password     = "password"
   unprivileged = true
+  start        = true
 
   rootfs {
     storage = "local-lvm"
