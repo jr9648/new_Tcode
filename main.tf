@@ -13,7 +13,7 @@ resource "proxmox_lxc" "Angular" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "ip=192.168.29.81/24,gw=192.168.29.1"
+    ip     = "ip=192.168.29.81/24"
     ip6    = "auto"
   }
 
@@ -38,7 +38,7 @@ resource "proxmox_lxc" "MySQL" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "ip=192.168.29.83/24,gw=192.168.29.1"
+    ip     = "ip=192.168.29.83/24"
     ip6    = "auto"
   }
 
@@ -63,7 +63,7 @@ resource "proxmox_lxc" "Wordpress" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "ip=192.168.29.82/24,gw=192.168.29.1"
+    ip     = "ip=192.168.29.82/24"
     ip6    = "auto"
   }
 
