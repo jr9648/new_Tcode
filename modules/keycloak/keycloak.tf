@@ -17,7 +17,7 @@ resource "proxmox_lxc" "Keycloak" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "192.168.29.82/24"
+    ip     = "192.168.29.84/24"
     gw     = "192.168.29.1"
     ip6    = "auto"
   }
