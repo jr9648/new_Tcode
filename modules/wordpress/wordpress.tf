@@ -16,7 +16,7 @@ resource "proxmox_lxc" "Wordpress" {
 
   network {
     name   = "eth0"
-    bridge = "vmbr0"
+    bridge = "vmbr1"
     ip     = "192.168.1.86/24"
     gw     = "192.168.1.1"
     ip6    = "auto"
