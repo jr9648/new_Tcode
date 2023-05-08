@@ -1,10 +1,10 @@
-resource "proxmox_lxc" "Jenkins" {
+resource "proxmox_lxc" "Haproxy" {
   target_node  = "jayesh"
-  hostname     = "Jenkins"
+  hostname     = "Haproxy"
   ostemplate   = "local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst" 
   password     = "password"
   cores        = 1
-  memory       = 2048
+  memory       = 1024
   swap         = 1024
   unprivileged = true
   start        = true
@@ -17,7 +17,7 @@ resource "proxmox_lxc" "Jenkins" {
   network {
     name   = "eth0"
     bridge = "vmbr0"
-    ip     = "192.168.29.83/24"
+    ip     = "192.168.29.87/24"
     gw     = "192.168.29.1"
     ip6    = "auto"
   }

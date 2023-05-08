@@ -1,7 +1,7 @@
 resource "proxmox_lxc" "MySql" {
   target_node  = "jayesh"
   hostname     = "MySql"
-  ostemplate   = "local:vztmpl/ubuntu-22.10-standard_22.10-1_amd64.tar.zst" 
+  ostemplate   = "local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst" 
   password     = "password"
   cores        = 1
   memory       = 1024
